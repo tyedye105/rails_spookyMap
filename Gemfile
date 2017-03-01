@@ -17,7 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'paperclip', '~> 4.1'
 gem 'rest-client'
+gem 'gmaps4rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -43,7 +45,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'simplecov', require: false
-  gem 'dotenv'
+  gem 'dotenv-rails'
 end
 
 group :development do

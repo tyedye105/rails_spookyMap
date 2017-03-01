@@ -1,0 +1,14 @@
+<h3>My Google Maps Demo</h3>
+<div id="map"></div>
+
+<%= javascript_tag do %>
+  var markers = <%= raw @markers.to_json %>;
+<% end %>
+<br>
+<hr>
+<br>
+<%= link_to "Add A Marker", new_marker_path %>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>&callback=initMap">
+</script>
