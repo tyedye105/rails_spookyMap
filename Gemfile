@@ -33,6 +33,8 @@ gem 'devise'
 gem 'paperclip', '~> 4.1'
 gem 'rest-client'
 gem 'gmaps4rails'
+gem 'httparty'
+gem 'google_places'
 
 
 group :development, :test do

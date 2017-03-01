@@ -5,7 +5,7 @@ function initMap() {
   var bounds = new google.maps.LatLngBounds();
 
   var n = markers.length;
-  for (var i = 0; i < n; i++) {
+  for (var i = 1; i < n; i++) {
     var marker = new google.maps.Marker({
       position: {lat: parseFloat(markers[i].latitude), lng: parseFloat(markers[i].longitude)},
       title: markers[i].name,

@@ -1,6 +1,9 @@
 class MarkersController < ApplicationController
   def index
     @markers = Marker.all
+    @client = @client = GooglePlaces::Client.new(ENV['GOOGLE_MAPS_API_KEY'])
+    @spots = @client.spots(-33.8670522, 151.1957362, :types => 'restaurant')
+
   end
 
   def new
