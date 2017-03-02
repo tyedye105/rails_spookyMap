@@ -2,7 +2,7 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4
   });
-  var bounds = new google.maps.LatLngBounds();
+  var bounds = new google.maps.LatLngBounds(); 
 
   var n = markers.length;
   for (var i = 1; i < n; i++) {
